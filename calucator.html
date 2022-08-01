@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <link rel="icon"  type="image/gif"  href="./links/fav.gif">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/d005eab2b6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>המחשבון | מחשבוניסט</title>
+</head>
+
+
+<body>
+
+<main>
+
+<header>
+    <div class="menu">
+    <a href="./index.html"><i class="fas fa-home"></i></a>
+    <i class="fas fa-info"></i>
+    </div>
+
+        <div class="setcolor">
+        <button type="button" class="choosecolor">שנו את הצבע שלי</button>
+        <button type="button" class="colorblue" id="colorblue"></button>
+        <button type="button" class="colorred" id="colorred"></button>
+        <button type="button" class="colorgreen" id="colorgreen"></button>
+        <button type="button" class="colorpurple" id="colorpurple"></button>
+    </div>
+       
+    
+      
+    </header>
+
+<section class="mainsection">
+
+<section class="bigsection">
+<section class="calucator" id="calculator">
+    <section class="calucatorbg">
+    <div class="result">
+        <h2 id="myResult" dir="ltr"></h2>
+    </div>
+    <div class="row">
+        <button class="action">÷</button>
+        <button class="action" id="precent">%</button>
+        <button class="action" id="exponent">^</button>
+        <button class="widebtn" id="clear">CLEAR</button>
+    </div>
+
+    <div class="row">
+        <button class="action">*</button>
+        <button class="num">3</button>
+        <button class="num">2</button>
+        <button class="num">1</button>
+    </div>
+
+    <div class="row">
+        <button class="action">-</button>
+        <button class="num">6</button>
+        <button class="num">5</button>
+        <button class="num">4</button>
+    </div>
+
+    <div class="row">
+        <button class="action">+</button>
+        <button class="num">9</button>
+        <button class="num">8</button>
+        <button class="num">7</button>
+    </div>
+
+    <div class="row">
+        <button id="getresult">=</button>
+        <button class="widebtn" id=delete>DEL</button>
+        <button class="num">0</button>
+    </div>
+
+    </section>
+</section>
+
+<section class="finalpage hidden" id="resultsPage">
+    <h1>הנה כל החישובים שעשיתם</h1>
+    <ul id="calculations" dir="ltr">
+    </ul>
+    <div class="sharing">
+        <div class="shortcalc">
+        <form method="get"> 
+        <!-- ^action="calucator.html" ?-->
+        <h2 class="shortcalc">חשבו משהו כאן למטה, לחצו על הכפתור ״חישוב ושיתוף״ ושתפו את התוצאה שלכם עם העולם!</h2>
+
+                <input type="number" name="secondnumber" id="secondnumber" placeholder="2" required>
+                <input type="text" name="useroperator" id="useroperator" maxlength="1" placeholder="+" required>
+                <input type="number" name="firstnumber" id="firstnumber" placeholder="1" required>
+            </div>
+            <div>
+                <button id="checkresult" type="submit" class="checkresult">חישוב ושיתוף</button>
+            </div>
+        <h2 id="sharetitle">הנה החישוב לתרגיל</h2>
+        <div id="sharenew">
+        <p id="viewfirstnum"> התרגיל הוא</p>
+        <p id="viewoperator"></p>
+        <p id="viewsecondnum"></p>
+        <p id="viewanswer">שווה ל-</p>
+        </div>
+
+        <div id="shareactions">
+        <p>שתפו עם חברים!</p>
+        <a  id="WAshare" href= ""><i class="far fa-envelope" id="mailShare"></i></a>
+    </div>
+    </div>
+</form>
+</section>
+</section>
+<div class="mobiledesc">
+    <p>פרוייקט זה נבנה כחלק מעבודת גמר  <a href="https://www.int-college.co.il/" class="collagelink">במכללת INT </a> הודות לטל שפייזר האלופה ©</p>
+</div> 
+
+<!-- באנר אינפורמטיבי שמאלי -->
+
+<section class="sidebanner">
+    <img src="./links/לוגו.gif" alt="mahshevonis logo" class="logo">
+    <section id="user-info" style="display: none;">
+        <p class="timertitle">בבזבזת על השטות הזה</p>
+        <p class="timer">בבזבזת על השטות הזה</p>
+        <p class="uinfoname">ברוכים הבאים</p>
+        <span id="nameRecieved"></span>
+        <p class="uinfoname">הדוא״ל איתו נרשמת</p>
+        <span id="emailRecieved"></span>
+        <div class="logout">
+        <a href="./index.html">לא אתה? התנתק</a>
+        </div>
+        <div class="">
+            <button id="finish">סיום וצפייה בחישובים</button>
+        </div>
+    </section> 
+     <p id="info">ABOUT THE PROJECT</p>
+    <hr class="divider">
+
+
+
+    <section class="author">
+        <div class="authorinfo">
+        <p id="info"><b>Student:</b> Etay Naaman</p>
+        <p id="info"><b>ID:</b> 302878442</p>
+        <div class="contact">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fas fa-phone"></i>
+            <i class="far fa-envelope"></i>
+        </div>
+    </div>
+    <img src="./links/etay.png" alt="איתי נעמן" class="authourimg">
+    </section>
+
+
+    <section class="author">
+        <div class="authorinfo">
+        <p id="info"><b>Student:</b> Milena Zingerman</p>
+        <p id="info"><b>ID:</b> 207848656</p>
+        <div class="contact">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fas fa-phone"></i>
+            <i class="far fa-envelope"></i>
+        </div>
+    </div>
+    <img src="./links/milena.jpeg" alt="איתי נעמן" class="authourimg">
+    </section>
+    
+</section>
+</section>
+</section>    
+
+</main>
+
+
+<footer>
+    <p>פרוייקט זה נבנה כחלק מעבודת גמר  <a href="https://www.int-college.co.il/" class="collagelink">במכללת INT </a> הודות לטל שפייזר האלופה ©</p>
+
+</footer>
+<script src="./scripts.js"></script>
+<script src="./calcScript.js"></script>
+</body>
+</html>
